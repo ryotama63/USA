@@ -46,7 +46,7 @@
         m = ('0' + m).slice(-2);
         s = ('0' + s).slice(-2);
         var timertext = m + ':' + s;
-        timer..innerHTML = timertext.replace(/[0-9:]/g,c=>replaceMap[c]||c);
+        timer.innerHTML = timertext.replace(/[0-9:]/g,c=>replaceMap[c]||c);
 
     }
 
