@@ -1,5 +1,5 @@
 (function(){
-const input = document.getElementById('input'); // 変数『input』に対象input要素を格納
+const input = document.getElementById('timer'); // 変数『input』に対象input要素を格納
 let replaceMap = {
 '0':'<img src="./image/0.png">',
 '1':'<img src="./image/1.png">',
