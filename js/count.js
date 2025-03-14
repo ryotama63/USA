@@ -34,6 +34,7 @@
     '8':'<img src="./image/8.png">',
     '9':'<img src="./image/9.png">',
     ':':'<img src="./image/colon.png">'
+    }
 
     // 残り時間を表示するために、ミリ秒を渡すと、分や秒に直してくれる関数
     function updateTimer(t) {
