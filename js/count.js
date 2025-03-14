@@ -44,7 +44,7 @@
         ':':'<img src="./image/colon.png">'
         }
         var timertext =  = m + ':' + s;
-        timer.textContent = timertext.replace(/[0-9]/g,c=>replaceMap[c]||c);
+        timer.textContent = timertext;
 
     }
 
