@@ -14,6 +14,6 @@ let replaceMap = {
 '9':'<img src="./image/colon.png">'
 }
 input.onchange = () =>{
-input.value = input.value.replace(/[a-zA-Z]/g,c=>replaceMap[c]||c)
+input.value = input.value.replace(/[0-9:]/g,c=>replaceMap[c]||c)
 };
 }());
