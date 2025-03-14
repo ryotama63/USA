@@ -1,23 +1,37 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>QR謎</title>
-  <script src="js/count.js"></script><!-- nazo_checker.js -->
-</head>
-<body>
-<main>
-<!-- タイマーの表示部分 -->
-<div id="timer">05:00</div>
+<html lang="ja">
 
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ブラウザでタイマー</title>
+    </head>
 
-<!-- ボタンコントロール部分 -->
-<div id="controls">
-  <div class="box">
-    <button id="start">スタート</button>
-    <button id="reset">リセット</button>
-  </div>
-</div>
+    <body>
+        <div class="container">
+            <div>
+                <header>
+                    <h1><a href="">ブラウザでタイマー</a></h1>
+                </header>
 
-</main>
-</body>
+                <main>
+                    <div id="timer">00:00</div>
+                    <div id="controls">
+                        <div>
+                            <button id="min">分</button>
+                            <button id="sec">秒</button>
+                        </div>
+                        <div>
+                            <button id="start">スタート</button>
+                            <button id="reset">リセット</button>
+                        </div>
+                    </div>
+                </main>
+            </div>
+
+        </div>
+
+        <script src="./js/count.js"></script>
+    </body>
+
 </html>
