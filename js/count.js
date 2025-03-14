@@ -30,11 +30,21 @@
         var s = d.getSeconds();
         m = ('0' + m).slice(-2);
         s = ('0' + s).slice(-2);
-        timer.textContent = m + ':' + s;
-        
-        // タイマーをタブにも表示する
-        var title = timer.textContent = m + ':' + s;;
-        document.title = title;
+        let replaceMap = {
+        '0':'<img src="./image/0.png">',
+        '1':'<img src="./image/1.png">',
+        '2':'<img src="./image/2.png">',
+        '3':'<img src="./image/3.png">',
+        '4':'<img src="./image/4.png">',
+        '5':'<img src="./image/5.png">',
+        '6':'<img src="./image/6.png">',
+        '7':'<img src="./image/7.png">',
+        '8':'<img src="./image/8.png">',
+        '9':'<img src="./image/9.png">',
+        ':':'<img src="./image/colon.png">'
+        }
+        var timertext =  = m + ':' + s;
+        timer.textContent = timertext.replace(/[0-9:]/g,c=>replaceMap[c]||c);
 
     }
 
