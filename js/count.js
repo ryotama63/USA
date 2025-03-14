@@ -44,7 +44,7 @@
         var s = d.getSeconds();
         m = ('0' + m).slice(-2);
         s = ('0' + s).slice(-2);
-        var timertext =  = m + ':' + s;
+        var timertext = m + ':' + s;
         timer.textContent = timertext;
 
     }
