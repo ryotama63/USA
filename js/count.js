@@ -13,7 +13,7 @@
     var timeLeft;
 
     // 現在時刻と表示形式を合わせるために * 1000
-    var timeToCountDown = 0;
+    var timeToCountDown = 300000;
 
     // clearTimeoutメソッドを使いたいので、その時用に変数定義
     var timerId;
