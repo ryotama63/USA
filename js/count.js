@@ -143,7 +143,7 @@
             return;
         }
 
-        timeToCountDown = 0;
+        timeToCountDown = 300000;
 
         // timeToCountDownをtimerに反映させたいのでupDatetimerを使う
         updateTimer(timeToCountDown);
