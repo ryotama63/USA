@@ -7,6 +7,6 @@ div.container{
      justify-content: center;
 }
 
-div#controls{
-  margin: auto;
+div#start{
+   margin:0 auto;
 }
