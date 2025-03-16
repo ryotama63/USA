@@ -1,14 +1,5 @@
 body {
-     background-image: url("../image/usa_background.png")
+     background-image: url("../image/usa_background.png");
      margin: 0 auto;
-}
-
-div.displayed {
-    display: block;
-    margin-left: auto;
-    margin-right: auto }
-
-#area {
-    margin-left: auto;
-    margin-right: auto;
+     display: block
 }
