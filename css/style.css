@@ -1,5 +1,5 @@
 body {
      background-image: url("../image/usa_background.png");
-     margin: 0 auto;
+     display: flex;
      display: block
 }
