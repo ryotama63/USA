@@ -23,17 +23,17 @@
 
     // 画像置換
     let replaceMap = {
-    '0':'<img src="./image/0.png">',
-    '1':'<img src="./image/1.png">',
-    '2':'<img src="./image/2.png">',
-    '3':'<img src="./image/3.png">',
-    '4':'<img src="./image/4.png">',
-    '5':'<img src="./image/5.png">',
-    '6':'<img src="./image/6.png">',
-    '7':'<img src="./image/7.png">',
-    '8':'<img src="./image/8.png">',
-    '9':'<img src="./image/9.png">',
-    ':':'<img src="./image/colon.png">'
+    '0':'<img class="displayed" src="./image/0.png">',
+    '1':'<img class="displayed" src="./image/1.png">',
+    '2':'<img class="displayed" src="./image/2.png">',
+    '3':'<img class="displayed" src="./image/3.png">',
+    '4':'<img class="displayed" src="./image/4.png">',
+    '5':'<img class="displayed" src="./image/5.png">',
+    '6':'<img class="displayed" src="./image/6.png">',
+    '7':'<img class="displayed" src="./image/7.png">',
+    '8':'<img class="displayed" src="./image/8.png">',
+    '9':'<img class="displayed" src="./image/9.png">',
+    ':':'<img class="displayed" src="./image/colon.png">'
     }
 
     // 残り時間を表示するために、ミリ秒を渡すと、分や秒に直してくれる関数
