@@ -4,7 +4,7 @@
     var min = document.getElementById('min');
     var sec = document.getElementById('sec');
     var start = document.getElementById('start');
-    var music = document.getElementById('music');
+    const music = document.querySelector("#music");
 
     // スタートタイムを押した時の時間を入れる変数
     var startTime;
@@ -93,6 +93,9 @@
             
             startTime = Date.now();
 
+            // play関数で音楽の再生
+            music.play();
+
             // カウントダウンの機能は再帰的に実行
             countDown();
         } else {
@@ -106,6 +109,9 @@
 
             // カウントを止めたいのでclearTimeoutする
             clearTimeout(timerId);
+
+            // play関数で音楽の再生
+            music.pause();
         }
     });
 })();
