@@ -3,7 +3,6 @@
     var timer = document.getElementById('timer');
     var min = document.getElementById('min');
     var sec = document.getElementById('sec');
-    var reset = document.getElementById('reset');
     var start = document.getElementById('start');
 
     // スタートタイムを押した時の時間を入れる変数
@@ -85,7 +84,7 @@
         if (isRunning === false) {
             isRunning = true;
 
-            start.textContent = 'ストップ';
+            start.innerHTML = '<img src="./image/STOPボタン.png">';
             
             startTime = Date.now();
 
@@ -95,7 +94,7 @@
             isRunning = false;
 
             // 表記をStartに戻す
-            start.textContent = 'スタート';
+            start.innerHTML = '<img src="./image/STARTボタン.png">';
 
             // この時点のtimeLeftで更新してあげる
             timeToCountDown = timeLeft;
@@ -103,19 +102,5 @@
             // カウントを止めたいのでclearTimeoutする
             clearTimeout(timerId);
         }
-    });
-
-    // リセットを押した時の処理
-    reset.addEventListener('click', function () {
-
-        // カウントダウン中に設定時間を変更できないようにする
-        if (isRunning === true) {
-            return;
-        }
-
-        timeToCountDown = 300000;
-
-        // timeToCountDownをtimerに反映させたいのでupDatetimerを使う
-        updateTimer(timeToCountDown);
     });
 })();
