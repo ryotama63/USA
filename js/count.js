@@ -60,7 +60,7 @@
             // 残り時間が0になった時の処理
             if (timeLeft < 0) {
                 isRunning = false;
-                start.textContent = 'スタート';
+                start.innerHTML = '<img id="button" src="./image/STARTボタン.png">';
                 clearTimeout(timerId);
                 timeLeft = 0;
 
