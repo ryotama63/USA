@@ -105,47 +105,6 @@
         }
     });
 
-    // 分を押した時の処理
-    min.addEventListener('click', function () {
-
-        // カウントダウン中に設定時間を変更できないようにする
-        if (isRunning === true) {
-            return;
-        }
-
-        // 分 = 60秒なので
-        timeToCountDown += 60 * 1000;
-
-        // 60分、60秒を超えたら0にする
-        if (timeToCountDown >= 60 * 60 * 1000) {
-            timeToCountDown = 0;
-        }
-
-        // timeToCountDownをtimerに反映させたいのでupDatetimerを使う
-        updateTimer(timeToCountDown);
-    });
-
-
-    // 秒を押した時の処理
-    sec.addEventListener('click', function () {
-
-        // カウントダウン中に設定時間を変更できないようにする
-        if (isRunning === true) {
-            return;
-        }
-
-        // 1秒なので
-        timeToCountDown += 1000;
-
-        if (timeToCountDown >= 60 * 60 * 1000) {
-            timeToCountDown = 0;
-        }
-
-        // timeToCountDownをtimerに反映させたいのでupDatetimerを使う
-        updateTimer(timeToCountDown);
-    });
-
-
     // リセットを押した時の処理
     reset.addEventListener('click', function () {
 
