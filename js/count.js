@@ -20,6 +20,10 @@
     // カウントダウンの状態を管理できるようにする
     var isRunning = false;
 
+    // カウントダウンの状態を管理できるようにする
+    var btnSTART = '<img id="button" src="./image/STARTボタン.png">';
+    var btnSTOP = '<img id="button" src="./image/STOPボタン.png">';
+    
     // 画像置換
     let replaceMap = {
     '0':'<img src="./image/0.png">',
@@ -60,7 +64,7 @@
             // 残り時間が0になった時の処理
             if (timeLeft < 0) {
                 isRunning = false;
-                start.innerHTML = '<img id="button" src="./image/STARTボタン.png">';
+                start.innerHTML = btnSTART;
                 clearTimeout(timerId);
                 timeLeft = 0;
 
@@ -84,7 +88,7 @@
         if (isRunning === false) {
             isRunning = true;
 
-            start.innerHTML = '<img id="button" src="./image/STOPボタン.png">';
+            start.innerHTML = btnSTOP;
             
             startTime = Date.now();
 
@@ -94,7 +98,7 @@
             isRunning = false;
 
             // 表記をStartに戻す
-            start.innerHTML = '<img id="button" src="./image/STARTボタン.png">';
+            start.innerHTML = btnSTART;
 
             // この時点のtimeLeftで更新してあげる
             timeToCountDown = timeLeft;
