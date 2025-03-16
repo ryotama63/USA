@@ -1,5 +1,5 @@
 body {
-     background="./image/usa_background.png"
+     background="../image/usa_background.png"
 }
 
 div.displayed {
