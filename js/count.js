@@ -84,7 +84,7 @@
         if (isRunning === false) {
             isRunning = true;
 
-            start.innerHTML = '<img src="./image/STOPボタン.png">';
+            start.innerHTML = '<img id="button" src="./image/STOPボタン.png">';
             
             startTime = Date.now();
 
@@ -94,7 +94,7 @@
             isRunning = false;
 
             // 表記をStartに戻す
-            start.innerHTML = '<img src="./image/STARTボタン.png">';
+            start.innerHTML = '<img id="button" src="./image/STARTボタン.png">';
 
             // この時点のtimeLeftで更新してあげる
             timeToCountDown = timeLeft;
