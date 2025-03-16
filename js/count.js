@@ -4,6 +4,7 @@
     var min = document.getElementById('min');
     var sec = document.getElementById('sec');
     var start = document.getElementById('start');
+    var start = document.getElementById('music');
 
     // スタートタイムを押した時の時間を入れる変数
     var startTime;
