@@ -11,9 +11,12 @@
 
     // 残り時間を計算するための変数
     var timeLeft;
+    
+    // 表示用補正
+    var timeCorrection = 999;
 
     // 現在時刻と表示形式を合わせるために * 1000
-    var timeToCountDown = 300000;
+    var timeToCountDown = 300000 + timeCorrection;
 
     // clearTimeoutメソッドを使いたいので、その時用に変数定義
     var timerId;
@@ -63,7 +66,7 @@
             timeLeft = timeToCountDown - (Date.now() - startTime);
 
             // 残り時間が0になった時の処理
-            if (timeLeft < 0) {
+            if (timeLeft < timeCorrection) {
                 isRunning = false;
                 start.innerHTML = btnSTART;
                 clearTimeout(timerId);
